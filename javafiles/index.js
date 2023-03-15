@@ -82,9 +82,9 @@ let popClose = document.querySelector('.pop-close .fa-xmark');
 // let pop2 = document.querySelector('.pop2')
 
 burger.addEventListener('click', () => {
-    $('.pop2').fadeIn()
+    $('.pop2').fadeIn();
     popClose.addEventListener('click', () => {
-        $('.pop2').fadeOut()
+        $('.pop2').fadeOut();
     })
 })
 

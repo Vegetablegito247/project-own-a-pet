@@ -1266,7 +1266,7 @@ footer {
 
     .box-search {
         width: 300px;
-        margin: 2rem 2rem;
+        margin: 2rem 1rem;
         display: block;
     }
 
@@ -1461,7 +1461,7 @@ footer {
 
     .box-search {
         width: 250px;
-        margin: 2rem 2rem;
+        margin: 2rem .6rem;
         display: block;
     }
 

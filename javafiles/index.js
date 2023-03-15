@@ -77,6 +77,45 @@ Array.from(animals).forEach((value, index, array) => {
     });
 });
 
+let burger = document.querySelector('.fa-bars');
+let popClose = document.querySelector('.pop-close .fa-xmark');
+// let pop2 = document.querySelector('.pop2')
+
+burger.addEventListener('click', () => {
+    $('.pop2').fadeIn()
+    popClose.addEventListener('click', () => {
+        $('.pop2').fadeOut()
+    })
+})
+
+let mqAni = document.querySelectorAll('#dok');
+
+mqAni.forEach((value, index, array) => {
+    value.addEventListener('click', () => {
+        if (index == 0) {
+            let img = document.querySelector('.box-head img');
+            img.src = './images/dog.png';
+            $('.box').fadeIn();
+            document.querySelector('.available').style.margin = '22rem 0 10rem';
+            closeBtn();
+        }
+        else if (index == 1) {
+            let img = document.querySelector('.box-head img');
+            img.src = './images/laugh.png';
+            $('.box').fadeIn();
+            document.querySelector('.available').style.margin = '22rem 0 10rem';
+            closeBtn();
+        }
+        else if (index == 2) {
+            let img = document.querySelector('.box-head img');
+            img.src = './images/paws.png';
+            $('.box-2').fadeIn();
+            document.querySelector('.available').style.margin = '25rem 0 10rem';
+            closeBtn2();
+        }
+    });
+})
+
 let cards = document.querySelectorAll('.plan');
 let btnNext = document.querySelector('.fa-chevron-right');
 let btnPrev = document.querySelector('.fa-chevron-left');
@@ -121,36 +160,3 @@ function myFunction(x) {
 }
 
 myFunction(x);
-
-// let curSlider = 0
-// let maxLength = cards.length - 1;
-
-// cards.forEach((value, index, array) => {
-//     value.style.transform = `translateX(${index * 100}%)`
-// })
-
-// btnNext.addEventListener('click', () => {
-//     if (curSlider === maxLength) {
-//         curSlider = 0;
-//     }
-//     else {
-//         curSlider++
-//     }
-
-//     cards.forEach((value, index, array) => {
-//         value.style.transform = `translateX(${100 * (index - curSlider)}%)`
-//     })
-// })
-
-// btnPrev.addEventListener('click', () => {
-//     if (curSlider === 0) {
-//         curSlider = maxLength;
-//     }
-//     else {
-//         curSlider--
-//     }
-
-//     cards.forEach((value, index, array) => {
-//         value.style.transform = `translateX(${100 * (index - curSlider)}%)`
-//     })
-// })

@@ -231,6 +231,10 @@ nav {
     border: 1px solid #0000b2;
 }
 
+.box-pets2 {
+    display: none;
+}
+
 .box,
 .box-2 {
     width: 1144px;
@@ -721,12 +725,12 @@ footer {
         font-size: 20px;
     }
 
-    .pop {
+    .pop2 {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 3;
         display: block;
         height: 100vh;
         background-color: #0000b2;
@@ -902,6 +906,104 @@ footer {
     .animals2 .ani-mq {
         display: flex;
         justify-content: space-between;
+    }
+
+    .box,
+    .box-2 {
+        width: 500px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 25px 25px 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        position: absolute;
+        top: 387px;
+        left: 7%;
+        z-index: 3;
+        text-align: center;
+        display: none;
+    }
+
+    .box-pets {
+        display: none;
+    }
+
+    .box-pets2 {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .bp2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 1rem;
+    }
+
+    .close .fa-xmark {
+        border-radius: 5px;
+        padding: 5px 8px;
+        background-color: #0000b2;
+        border-radius: 6px;
+        color: #ffffff;
+        transition: .7s;
+    }
+
+    .box-search {
+        width: 350px;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .box-search #location,
+    .box-search #breed {
+        width: 100%;
+        height: 40px;
+        padding: 2px 6px;
+        border: 1px solid #cdcccc;
+        margin: 0 0 1rem;
+        outline: none;
+        border-radius: 4px;
+        transition: .7s;
+    }
+
+    .bp2 .fish,
+    .bp2 .horse,
+    .bp2 .barn,
+    .bp2 .rat,
+    .bp2 .bird,
+    .bp2 .cat {
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        transition: .7s;
+    }
+
+    .bp2 .fish img,
+    .bp2 .horse img,
+    .bp2 .barn img,
+    .bp2 .rat img,
+    .bp2 .bird img,
+    .bp2 .cat img {
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+    }
+
+    .bp2 .fish p,
+    .bp2 .horse p,
+    .bp2 .barn p,
+    .bp2 .rat p,
+    .bp2 .bird p,
+    .bp2 .cat p {
+        margin: 10px 0 20px;
+        color: #0000b2;
+        font-weight: 400;
+        font-family: 'exo', sans-serif;
+        font-size: 13px;
     }
 
     .ani2 {
@@ -1125,6 +1227,109 @@ footer {
         transition: .7s;
     }
 
+    .box,
+    .box-2 {
+        width: 353px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        position: absolute;
+        top: 387px;
+        left: 7%;
+        z-index: 3;
+        text-align: center;
+        display: none;
+    }
+
+    .box-pets2 {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .bp2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 1rem;
+    }
+
+    .close .fa-xmark {
+        border-radius: 5px;
+        padding: 5px 8px;
+        background-color: #0000b2;
+        border-radius: 6px;
+        color: #ffffff;
+        transition: .7s;
+    }
+
+    .box-search {
+        width: 300px;
+        margin: 2rem 2rem;
+        display: block;
+    }
+
+    .box-search #location,
+    .box-search #breed {
+        width: 100%;
+        height: 40px;
+        padding: 2px 6px;
+        border: 1px solid #cdcccc;
+        margin: 0 0 1rem;
+        outline: none;
+        border-radius: 4px;
+        transition: .7s;
+    }
+
+    .bp2 .fish,
+    .bp2 .horse,
+    .bp2 .barn,
+    .bp2 .rat,
+    .bp2 .bird,
+    .bp2 .cat {
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        transition: .7s;
+    }
+
+    .bp2 .fish img,
+    .bp2 .horse img,
+    .bp2 .barn img,
+    .bp2 .rat img,
+    .bp2 .bird img,
+    .bp2 .cat img {
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+    }
+
+    .bp2 .fish p,
+    .bp2 .horse p,
+    .bp2 .barn p,
+    .bp2 .rat p,
+    .bp2 .bird p,
+    .bp2 .cat p {
+        margin: 10px 0 20px;
+        color: #0000b2;
+        font-weight: 400;
+        font-family: 'exo', sans-serif;
+        font-size: 13px;
+    }
+
+    .box-2 h4 {
+        font-weight: 600;
+        font-family: 'exo', sans-serif;
+        font-size: 25px;
+        margin: 3rem 0 2rem;
+        letter-spacing: 2px;
+        color: #0000b2;
+    }
+
     .pet-1 .card,
     .pet-1 .avail {
         width: 180px;
@@ -1146,7 +1351,7 @@ footer {
     }
 
     .articles {
-        padding: 10px;
+        padding: 10px 15px;
     }
 
     .dog-art {
@@ -1230,6 +1435,109 @@ footer {
         transition: .7s;
     }
 
+    .box,
+    .box-2 {
+        width: 333px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 10px 10px 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        position: absolute;
+        top: 387px;
+        left: 7%;
+        z-index: 3;
+        text-align: center;
+        display: none;
+    }
+
+    .close .fa-xmark {
+        border-radius: 5px;
+        padding: 5px 8px;
+        background-color: #0000b2;
+        border-radius: 6px;
+        color: #ffffff;
+        transition: .7s;
+    }
+
+    .box-search {
+        width: 250px;
+        margin: 2rem 2rem;
+        display: block;
+    }
+
+    .box-search #location,
+    .box-search #breed {
+        width: 100%;
+        height: 40px;
+        padding: 2px 6px;
+        border: 1px solid #cdcccc;
+        margin: 0 0 2rem;
+        outline: none;
+        border-radius: 4px;
+        transition: .7s;
+    }
+
+    .box-pets2 {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .bp2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 1rem;
+    }
+
+    .bp2 .fish,
+    .bp2 .horse,
+    .bp2 .barn,
+    .bp2 .rat,
+    .bp2 .bird,
+    .bp2 .cat {
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        transition: .7s;
+    }
+
+    .bp2 .fish img,
+    .bp2 .horse img,
+    .bp2 .barn img,
+    .bp2 .rat img,
+    .bp2 .bird img,
+    .bp2 .cat img {
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+    }
+
+    .bp2 .fish p,
+    .bp2 .horse p,
+    .bp2 .barn p,
+    .bp2 .rat p,
+    .bp2 .bird p,
+    .bp2 .cat p {
+        margin: 10px 0 20px;
+        color: #0000b2;
+        font-weight: 400;
+        font-family: 'exo', sans-serif;
+        font-size: 13px;
+    }
+
+    .box-2 h4 {
+        font-weight: 600;
+        font-family: 'exo', sans-serif;
+        font-size: 20px;
+        margin: 3rem 0 2rem;
+        letter-spacing: 2px;
+        color: #0000b2;
+    }
+
     .available2 h3 {
         font-size: 30px;
     }
@@ -1246,7 +1554,7 @@ footer {
     }
 
     .articles {
-        padding: 10px;
+        padding: 10 px;
     }
 
     .dog-art {

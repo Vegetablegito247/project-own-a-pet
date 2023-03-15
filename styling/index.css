@@ -621,6 +621,7 @@ footer {
     font-size: 16px;
     margin: 0 0 1rem;
     text-transform: uppercase;
+    width: 200px;
 }
 
 .foot-list li {
@@ -979,8 +980,8 @@ footer {
         font-family: 'roboto', sans-serif;
         font-size: 13px;
         font-weight: 600;
-        color: #036500;
-        border: 2px solid #07ce00;
+        color: #000042;
+        border: 2px solid #0000b2;
         border-radius: 50px;
         transition: .7s;
     }
@@ -994,8 +995,12 @@ footer {
         position: absolute;
         padding: 7px 10px;
         color: #ffffff;
-        background-color: #07ce00;
+        background-color: #0000b2;
         border-radius: 50%;
+    }
+
+    .btn-n:active {
+        transform: scale(1.1);
     }
 
     .plans .fa-chevron-left {
@@ -1018,8 +1023,233 @@ footer {
         margin: 0 0 2rem;
     }
 
+    .footLogo {
+        text-align: center;
+    }
+
     .foot {
+        display: block;
+        margin: 1.5rem 0 4rem;
+    }
+
+    .foot-list {
+        line-height: 60px;
+        border-bottom: 1px solid #cdcccc;
+    }
+
+    .foot-list h3 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0 10px;
+        text-transform: uppercase;
+        width: auto;
+    }
+
+    .foot-list ul {
+        display: none;
+    }
+
+    .foot-signup {
+        text-align: center;
+        color: #0000b2;
+        background-color: #ffffff;
+        width: 400px;
+        height: fit-content;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 2rem auto 0;
+    }
+
+    .footest {
         display: block;
     }
 
+    .footest p {
+        width: 400px;
+        text-align: center;
+        margin: 0 auto 2rem;
+    }
+
+    .socials {
+        width: 400px;
+        text-align: center;
+        margin: 1rem auto 0 !important;
+    }
+}
+
+@media (max-width: 428px) {
+    .head .search-item {
+        width: 353px;
+        height: 47px;
+        padding: 2px 8px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        z-index: 1;
+        position: absolute;
+        top: 27%;
+        left: 6%;
+        display: inline-block;
+    }
+
+    .search-item #pet-type {
+        width: 270px;
+        height: 100%;
+        padding: 2px 6px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        transition: .7s;
+    }
+
+    .animals2 {
+        display: block;
+        width: 350px;
+        position: relative;
+        top: 320px;
+        left: 7%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .animals2 .dog,
+    .animals2 .cat,
+    .animals2 .rabbit,
+    .animals2 .shelter,
+    .animals2 .others {
+        width: 170px;
+        height: fit-content;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        transition: .7s;
+    }
+
+    .pet-1 .card,
+    .pet-1 .avail {
+        width: 180px;
+    }
+
+    .pet-card .card img {
+        width: 100%;
+        height: 220px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .planning h3 {
+        font-size: 30px;
+    }
+
+    .plan p {
+        width: 300px;
+        margin: 1rem auto 5rem !important;
+    }
+
+    .articles {
+        padding: 10px;
+    }
+
+    .dog-art {
+        width: 370px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
+        position: relative;
+    }
+
+    .foot-signup,
+    .footest p,
+    .socials {
+        width: 330px;
+    }
+}
+
+@media (max-width: 376px) {
+    .head .search-item {
+        width: 320px;
+        height: 47px;
+        padding: 2px 8px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        z-index: 1;
+        position: absolute;
+        top: 27%;
+        left: 7%;
+        display: inline-block;
+    }
+
+    .search-item #pet-type {
+        width: 240px;
+        height: 100%;
+        padding: 2px 6px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        transition: .7s;
+    }
+
+    .text h3 {
+        font-size: 35px;
+        font-family: 'birthstone', cursive;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 4px 4px #0000b2;
+    }
+
+    .text p {
+        font-family: 'exo', sans-serif;
+        margin: 2.7rem 0 0;
+        padding: 10px 0 0;
+        width: 100%;
+        background-color: #0000b2;
+        height: 70px;
+        font-size: 13px;
+    }
+
+    .animals2 {
+        display: block;
+        width: 330px;
+        position: relative;
+        top: 320px;
+        left: 7%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .animals2 .dog,
+    .animals2 .cat,
+    .animals2 .rabbit,
+    .animals2 .shelter,
+    .animals2 .others {
+        width: 150px;
+        height: fit-content;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+        transition: .7s;
+    }
+
+    .available2 h3 {
+        font-size: 30px;
+    }
+
+    .pet-1 .card,
+    .pet-1 .avail {
+        width: 160px;
+    }
+
+    .pet-card .card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .articles {
+        padding: 10px;
+    }
+
+    .dog-art {
+        width: 350px;
+    }
 }

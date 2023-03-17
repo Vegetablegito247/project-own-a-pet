@@ -730,13 +730,13 @@ footer {
     }
 
     .pop2 {
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 3;
         display: block;
-        height: 100%;
+        height: 100vh;
         background-color: #0000b2;
         text-align: start;
         display: none;
